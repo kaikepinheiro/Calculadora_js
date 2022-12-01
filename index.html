@@ -11,14 +11,15 @@
 
 <body>
 <div class="fundo">
+   <h1>Bem-Vindo a Calculadora Virtual JS</h1>
    <div class="calculadora">
        <h1>CALCULADORA</h1>
        <p id="resultado"></p>
 
           <table>
             <tr>
-              <td><button class="botao" onclick="limpar ()"></button></td>
-              <td><button class="botao" onclick="voltar ()"></button></td>
+              <td><button class="botao" onclick="limpar ('')">C</button></td>
+              <td><button class="botao" onclick="voltar ('')"><</button></td>
               <td><button class="botao" onclick="insere ('/')" > / </button></td>
               <td><button class="botao" onclick="insere ('*')"> * </button></td>
            </tr>
@@ -47,12 +48,12 @@
             <td><button class="botao" onclick="insere ('1')">1</button></td>
             <td><button class="botao" onclick="insere ('2')">2</button></td>
             <td><button class="botao" onclick="insere ('3')">3</button></td>
-            <td rowspan="2"><button class="botao"  style="height : 106px" onclick="calcular">=</button></td>
+            <td rowspan="2"><button class="botao"  style="height : 106px" onclick="calcular()">=</button></td>
           </tr>
 
          <tr>
             <td colspan="2"><button class="botao" onclick="insere ('0')" style="width: 106px;">0</button></td>
-            <td><button class="botao" onclick="insere ('.')">.</button></td>
+            <td><button class="botao" onclick="insere('.')">.</button></td>
           </tr>
         </table>
 
